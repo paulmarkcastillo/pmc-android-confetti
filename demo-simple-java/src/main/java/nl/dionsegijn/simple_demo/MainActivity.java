@@ -21,15 +21,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(final View view) {
                 konfettiView.build()
-                        .addColors(Color.YELLOW, Color.GREEN, Color.MAGENTA)
-                        .setDirection(0.0, 359.0)
-                        .setSpeed(1f, 5f)
+                        .addColors(Color.RED, Color.YELLOW, Color.WHITE)
+                        .setDirection(0.0, 180.0)
+                        .setSpeed(0f, 1f)
                         .setFadeOutEnabled(true)
                         .setTimeToLive(2000L)
-                        .addShapes(Shape.RECT, Shape.CIRCLE)
-                        .addSizes(new Size(12, 5f))
+                        .addShapes(Shape.RECT)
+                        .addSizes(new Size(8, 50f))
                         .setPosition(-50f, konfettiView.getWidth() + 50f, -50f, -50f)
-                        .streamFor(300, 5000L);
+                        .streamFor(20, 0L);
             }
         });
     }
